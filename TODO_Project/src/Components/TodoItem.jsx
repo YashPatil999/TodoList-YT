@@ -7,7 +7,6 @@ export default function TodoItem({ item, todos, setTodos }) {
     setTodos(
         todos.map((todo)=>
         todo.name === name? {...todo,done:!todo.done} : todo));
-    console.log(todos);
   }
   const ClassDef = item.done? styles.completed : "";
   return (
